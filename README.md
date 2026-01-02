@@ -31,12 +31,12 @@ demo()
 建立 DSA-style 群組參數 (p, q, g)（示範用小參數）
 Alice / Bob 各自產生長期金鑰
 私鑰 x
-公鑰 y = g^x mod p
+公鑰 $y = g^x mod p$
 
 ### 2.Signcryption（Alice → Bob）
 Alice 產生一次性隨機值 x
 計算 Diffie–Hellman 共享金鑰
-* k = y_b^x mod p
+* $k = y_b^x mod p$
 
 以 KDF 將 k 拆分為：
 * k1：對稱加密金鑰（AES-GCM）
