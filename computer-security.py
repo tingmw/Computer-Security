@@ -325,7 +325,6 @@ def find_toy_params() -> GroupParams:
 
 
 def demo(verbose_bits: int | None = 80):
-    hr("初始化參數（玩具參數，僅示範流程）")
     params = find_toy_params()
     print("p:", fmt_int(params.p))
     print("q:", fmt_int(params.q))
